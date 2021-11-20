@@ -1,0 +1,38 @@
+{
+  "name": "fs-hooks",
+  "version": "0.3.4",
+  "description": "未来软件内部react hooks",
+  "author": {
+    "name": "pengp",
+    "email": "codevers@yeah.net",
+    "url": "https://codevers.cc/"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "bump": "npm version",
+    "example": "cd example && yarn install && yarn package",
+    "prepublishOnly": "yarn build",
+    "watch": "nodemon --watch src --exec \"yarn build\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "nodemon": "^2.0.6"
+  },
+  "publishConfig": {
+    "registry": "http://npm.dev.ft/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.dev.ft/pengp/fs-hooks"
+  }
+}
